@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    background-color: #000022;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo p {
+    color: #fff;
+    font-size: 20px;
+}
+.logo p span {
+    color: #e34242;
+}
+.nav_list {
+    display: flex;
+    align-items: center;    
+}
+.nav_list li {
+    list-style-type: none;
+}
+.nav_list li a {
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.nav_list li a:hover {
+    color: #F15A59;
+}
+#language_text {
+    color: #fff;
+    text-decoration: none;
+}
+#language {
+    width: 23.5px;
+    height: 23.5px;
+    margin-left: 10px;
+}
+#cart {
+    width: 23.5px;
+    height: 23.5px;
+    margin-left: 10px;
+}
+nav > div:last-child {
+    width: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+.main_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_text p {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 200px;
+    text-align: center;
+}
+.main_text p .main_text_red {
+    color: #D21312;
+    font-size: 3rem;
+}
+.main_text .main_text_button {
+    margin-top: 25px;
+    padding: 20px 50px;
+    color: #fff;
+    background-color: #F15A59;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+.main_text .main_text_button:hover {
+    background-color: #e34242;
+}
+.main_text .main_text_button a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff;
+}
+#main_image {
+    margin-left: 20px;
+}
+.featured_brands {
+    margin-top: 160px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featured_brands p {
+    color: #fff;
+    font-size: 24px;
+}
+.featured_brands .featured_icon {
+    width: 75px;
+    height: 75px;
+}
+.featured_brands #volkswagen_featured {
+    width: 110px;
+    height: 70px;
+}
+.featured_images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 80vw;
+}
+.information {
+    width: 90vw;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+.information .info_img {
+    width: 363px;
+    height: 273px;
+    margin-left: 100px;
+    margin-right: 10vw;
+}
+.info_txt {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+.information .info_head {
+    color: #fff;
+    font-size: 24px;
+    opacity: 50%;
+}
+.info_title {
+    color: #fff;
+    font-size: 24px;
+}
+.info_title .text_red {
+    color:#D21312;
+}
+.info_txt {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.info_txt .text_red {
+    color:#D21312;
+}
+.contact_button {
+    padding: 20px 35px;
+    margin-top: 20px;
+    background-color: #F15A59;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+.contact_button:hover {
+    background-color: #e34242;
+}
+.contact_button a {
+    text-decoration: none;
+    color: #fff;
+}
+.best_sellers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100vw;
+}
+.best_sellers h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+    margin-top: 50px;
+
+}
+.card_container .card {
+    width: 350px;
+    height: 700px;
+    background-color: #3C486B;
+    border-radius: 15px;
+}
+.card_container .card img {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+.card_container .card h3 {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+}
+.card_container .card p {
+    color: #fff;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    margin-top: 10px;
+}
+.card_container .card .price {
+    color: #C6455B;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.card_container .card .card_button {
+    display: flex;
+    justify-content: center;
+}
+.card_container .card button {
+    margin-top: 20px;
+    padding: 25px 90px 25px 90px;
+    border-radius: 25px;
+    border: 0;
+    background-color: #F15A59;
+    transition: all 0.7s ease-in-out;
+}
+.card_container .card button:hover {
+    color: #e34242;
+}
+.card_container .card button a {
+    text-decoration: none;
+    color: #fff;
+}
+footer {
+    margin-top: 75px;
+    width: 100vw;
+    height: 15vh;
+    background-color: #00000C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_logo {
+    width: 5%;
+    height: 30%;
+    background-image: url(../Images/logo_icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+footer .nav_list_footer {
+    display: flex;
+    align-items: center;
+    height: 30%;
+    margin-right: 20vw;
+    margin-left: 5vw;
+}
+footer .nav_list_footer li {
+    margin-left: 3vw;
+}
+footer .nav_list_footer li a {
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+}
+footer .nav_list_footer li a:hover {
+    color: #F15A59;
+}
+footer p {
+    color: #fff;
+    display: flex;
+}
+footer p span {
+    color: #D21312;
+}
+footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    margin-right: 100px;
+}
+footer .content p:nth-child(odd){
+    font-weight:700;
+}
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.main_text p {
+    animation: slideIn 1.5s ease forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.featured_brands {
+    animation: fadeIn 1.5s ease forwards;
+}
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.best_sellers {
+    animation: scaleIn 1.5s ease forwards;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: fadeInUp 1.5s ease forwards;
+}
+.nav_list li a {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.nav_list li a:hover {
+    transform: translateY(-25px);
+    color: #F15A59;
+}
+.main_text .main_text_button:hover {
+    transform: scale(1.05);
+}
+.card_container .card:hover {
+    transform: scale(1.05);
+}
+.footer_logo {
+    animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.nav_list li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+.nav_list li a:hover::after {
+    width: 100%;
+}
+.main_image #main_image {
+    opacity: 0;
+    animation: fadeInImage 1.5s forwards;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.footer .content {
+    opacity: 0;
+    animation: fadeInFooterContent 1.5s forwards;
+}
+
+@keyframes fadeInFooterContent {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+h3:hover {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.featured_brands .featured_icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+footer .nav_list_footer li a:hover {
+    color: #D21312;
+    transition: color 0.3s ease;
+}
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+footer.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.main_text p:hover {
+    color: #F15A59;
+    transition: color 0.3s ease;
+}
+.card_container .card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.footer_logo:hover {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+}
+header {
+    background-color: #000022;
+    transition: background-color 0.5s ease;
+}
+.nav_list li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+.nav_list li a:hover::after {
+    width: 100%;
+}
+footer .content {
+    opacity: 0;
+    animation: fadeInFooterContent 1.5s forwards;
+}
+
+@keyframes fadeInFooterContent {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.main_text .main_text_button:hover {
+    background-color: #e34242;
+    transition: background-color 0.3s ease;
+}
+h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+h3:hover {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.card_container {
+    opacity: 0;
+    animation: fadeInCardContainer 1.5s forwards;
+}
+
+@keyframes fadeInCardContainer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.footer_logo {
+    animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+header {
+    background-color: #000022;
+    transition: background-color 1s ease-in-out;
+}
+
+.main_text p {
+    opacity: 0;
+    animation: fadeInText 1.5s forwards;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.featured_icon {
+    transform: scale(0.8);
+    transition: transform 0.5s ease-in-out;
+}
+
+.featured_icon:hover {
+    transform: scale(1);
+}
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer_logo {
+    animation: rotateAnimation 5s infinite linear;
+}
+
+@keyframes rotateAnimation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.card_container {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card_container:hover {
+    transform: scale(1);
+}
+#main_image {
+    opacity: 0;
+    animation: fadeInImage 1.5s forwards;
+}
+
+@keyframes fadeInImage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.info_img {
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: slideInImage 1.5s forwards;
+}
+
+@keyframes slideInImage {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.best_sellers .card {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.best_sellers .card:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+.featured_icon {
+    animation: rotateAnimation 10s infinite linear;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.info_text {
+    opacity: 0;
+    animation: fadeInInfoText 1.5s forwards;
+}
+
+@keyframes fadeInInfoText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.best_sellers .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.best_sellers .card:hover {
+    transform: scale(1.05);
+}
+.nav_list li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #F15A59; 
+    transition: width 0.3s;
+}
+
+.nav_list li a:hover::after {
+    width: 100%;
+}
+.logo img {
+    animation: bounceLogo 2s infinite alternate;
+}
+
+@keyframes bounceLogo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.featured_icon {
+    animation: fadeBrandIcons 4s infinite alternate;
+}
+
+@keyframes fadeBrandIcons {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+#main_image {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+#main_image:hover {
+    transform: scale(1.1);
+}
+.nav_list {
+    opacity: 0;
+    animation: fadeInNavList 1.5s forwards;
+}
+
+@keyframes fadeInNavList {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.featured_icon {
+    animation: scaleAndRotate 6s infinite linear;
+}
+
+@keyframes scaleAndRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+.info_title {
+    animation: colorChangeInfoTitle 4s infinite alternate;
+}
+
+@keyframes colorChangeInfoTitle {
+    0% { color: #fff; }
+    50% { color: #F15A59; }
+    100% { color: #fff; }
+}
+header {
+    transition: background-color 0.5s ease-in-out;
+}
+
+header:hover {
+    background-color: #2c3e50; 
+}
+
+
